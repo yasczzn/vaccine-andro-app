@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="330dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="?attr/bgColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/vaksin" />
+
+            <Button
+                android:id="@+id/menu_lanjut"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="275dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="pelajari lebih lanjut"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="330dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/cardView"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="?attr/bgColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/vaksin2"/>
+
+            <Button
+                android:id="@+id/menu_regis"
+                android:layout_width="245dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="275dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="daftar vaksin sekarang"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="300dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/cardView1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="?attr/bgColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/vaksin3"/>
+
+            <Button
+                android:id="@+id/menu_peta"
+                android:layout_width="245dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="daftar vaksin sekarang"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

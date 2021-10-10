@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Keluarga Sehat App</string>
+    <string name="app_label">Keluarga Sehat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_login">Log Out</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome">Login Aplikasi</string>
+    <string name="registeration">Daftar vaksinisasi di rumah sakit/puskesmas terdekat anda</string>
+    <string name="be">Ikuti info terbaru seputar vaksin</string>
+    <string name="prompt_password">password</string>
+    <string name="login_here">Already have an account? Login Here</string>
+    <string name="signup_here">Dont have an account? Sign Up Here</string>
+    <string name="daftarvaksin">Daftar vaksinisasi di rumah sakit/puskesmas terdekat anda</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="login_button">Login</string>
+    <string name="details">Detail Pendaftaran Pasien</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">email</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="cara_cara"><ul><b>Untuk mencegah penyebaran COVID-19:\n</b>
+        <li>Cuci tangan Anda secara rutin.\n</li>
+        <li>Selalu jaga jarak aman dengan orang yang batuk atau bersin.\n</li>
+        <li>Kenakan masker jika pembatasan fisik tidak dimungkinkan.\n</li>
+        <li>Jangan sentuh mata, hidung, atau mulut Anda.\n</li>
+        <li>Saat batuk atau bersin, tutup mulut dan hidung Anda dengan lengan atau tisu.\n</li>
+        <li>Jangan keluar rumah jika merasa tidak enak badan.\n</li>
+        <li>Segera hubungi penyedia layanan kesehatan jika demam, batuk, atau kesulitan bernapas, segera cari bantuan medis agar dapat segera mengarahkan Anda ke fasilitas kesehatan yang tepat.\n</li>
+
+        <li><b>Mengenakan masker\n</b>
+        Masker dapat membantu mencegah penyebaran virus dari orang yang mengenakannya kepada orang lain. Mengenakan masker saja tidak cukup untuk melindungi diri dari COVID-19, sehingga harus dikombinasikan dengan pembatasan fisik dan kebersihan tangan. Ikuti saran yang diberikan oleh otoritas kesehatan setempat.</li>
+        </ul>
+    </string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="home">Home</string>
+    <string name="register">Daftar Vaksin</string>
+    <string name="settings">Pengaturan</string>
+    <string name="log_out">Log Out</string>
+
+</resources>

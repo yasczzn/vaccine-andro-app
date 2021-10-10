@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/tv_editdata"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginHorizontal="200dp"
+        android:text="Edit Data"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/tv_deletedata"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginHorizontal="200dp"
+        android:text="Delete"
+        android:textSize="20dp"/>
+
+</LinearLayout>

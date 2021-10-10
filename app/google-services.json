@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "967255595968",
+    "firebase_url": "https://keluargasehat2-00-default-rtdb.firebaseio.com",
+    "project_id": "keluargasehat2-00",
+    "storage_bucket": "keluargasehat2-00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967255595968:android:36a4ccce3d4700d33f8625",
+        "android_client_info": {
+          "package_name": "com.example.vaksinapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967255595968-gh3nanvcvipdij6vj9fg5peqjmqj83tj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEP-UfvbUNv777qlPlTMgDyZn2EuNzh9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967255595968-gh3nanvcvipdij6vj9fg5peqjmqj83tj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
