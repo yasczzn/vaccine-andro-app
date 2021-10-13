@@ -7,11 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".ui.settings.SettingsFragment">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="?attr/bgColor"
+                    android:text="Settings"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
         <TextView
             android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
+            android:layout_below="@id/toolbar"
             android:text="Change Theme"
             android:textColor="?attr/metaTextColor"
             android:textSize="23dp" />
@@ -20,6 +38,7 @@
             android:id="@+id/tvChangeTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
             android:layout_marginLeft="300dp"
             android:layout_marginTop="15dp" />
 

@@ -9,16 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
-
-import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+
 import com.example.vaksinapplication.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class SettingsFragment extends Fragment {
+
     private FirebaseAnalytics mFirebaseAnalytics;
     Activity context;
     static Boolean isTouched = false;
@@ -28,6 +29,7 @@ public class SettingsFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_settings, container, false);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(getContext());
         context = getActivity();
+        Toolbar toolbar = context.findViewById(R.id.toolbar);
 
         return root;
     }
@@ -36,13 +38,11 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onStart(){
         super.onStart();
-
         if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
-            context.setTheme(R.style.Theme_AppCompat_DayNight_DarkActionBar);
+            context.setTheme(R.style.Theme_VaksinApplication_NoActionBar);
         } else {
-            context.setTheme(R.style.Theme_AppCompat_DayNight_DarkActionBar);
+            context.setTheme(R.style.Theme_VaksinApplication_NoActionBar);
         }
-
         context.setContentView(R.layout.fragment_settings);
         SwitchCompat tvChangeTheme = (SwitchCompat) context.findViewById(R.id.tvChangeTheme);
         tvChangeTheme.setOnTouchListener(new View.OnTouchListener() {
@@ -69,5 +69,4 @@ public class SettingsFragment extends Fragment {
         });
 
     }
-
 }
