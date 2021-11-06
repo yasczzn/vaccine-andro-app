@@ -39,6 +39,7 @@
     <string name="home">Home</string>
     <string name="register">Daftar Vaksin</string>
     <string name="settings">Pengaturan</string>
+    <string name="abt_us">About Us</string>
     <string name="log_out">Log Out</string>
 
 </resources>

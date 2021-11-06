@@ -2,12 +2,13 @@ package com.example.vaksinapplication.ui.settings;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -22,7 +23,6 @@ public class SettingsFragment extends Fragment {
 
     private FirebaseAnalytics mFirebaseAnalytics;
     Activity context;
-    static Boolean isTouched = false;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -34,39 +34,46 @@ public class SettingsFragment extends Fragment {
         return root;
     }
 
+    private void goToWeb() {
+        goToUrl ( "https://github.com/yasmin1812");
+    }
+
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public void onStart(){
         super.onStart();
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
-            context.setTheme(R.style.Theme_VaksinApplication_NoActionBar);
-        } else {
-            context.setTheme(R.style.Theme_VaksinApplication_NoActionBar);
-        }
         context.setContentView(R.layout.fragment_settings);
-        SwitchCompat tvChangeTheme = (SwitchCompat) context.findViewById(R.id.tvChangeTheme);
-        tvChangeTheme.setOnTouchListener(new View.OnTouchListener() {
+        TextView aboutUs = (TextView) context.findViewById(R.id.tvAboutUs);
+        aboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                isTouched = true;
-                return false;
-            }
-        });
-        tvChangeTheme.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
-        {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
-            {
-                if (isTouched) {
-                    isTouched = false;
-                    if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                    } else {
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    }
-                }
+            public void onClick(View view) {
+                goToWeb();
             }
         });
 
+        SwitchCompat tvChangeTheme = (SwitchCompat) context.findViewById(R.id.scChangeTheme);
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            tvChangeTheme.setChecked(true);
+        }
+
+        tvChangeTheme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (tvChangeTheme.isChecked()){
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    tvChangeTheme.setChecked(true);
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    tvChangeTheme.setChecked(false);
+                }
+            }
+        });
     }
+
 }

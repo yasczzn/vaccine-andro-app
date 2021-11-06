@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.settings.SettingsFragment">
 
         <androidx.appcompat.widget.Toolbar
@@ -24,22 +25,32 @@
 
         </androidx.appcompat.widget.Toolbar>
 
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/scChangeTheme"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="20dp"
+            android:text="Change Theme"
+            android:textColor="?attr/metaTextColor"
+            android:textSize="23dp"
+            android:layout_marginTop="15dp" />
+
+        <View
+            android:id="@+id/viewLine"
+            style="@style/View"
+            android:layout_width="360dp"
+            android:layout_marginStart="10dp"/>
+
         <TextView
-            android:layout_width="290dp"
+            android:id="@+id/tvAboutUs"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
-            android:layout_below="@id/toolbar"
-            android:text="Change Theme"
+            android:textSize="23dp"
             android:textColor="?attr/metaTextColor"
-            android:textSize="23dp" />
+            android:text="@string/abt_us"/>
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/tvChangeTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/toolbar"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="15dp" />
 
-</RelativeLayout>
+</LinearLayout>
