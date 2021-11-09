@@ -34,6 +34,8 @@
             android:text="Change Theme"
             android:textColor="?attr/metaTextColor"
             android:textSize="23dp"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
             android:layout_marginTop="15dp" />
 
         <View
