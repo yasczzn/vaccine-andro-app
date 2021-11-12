@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
-            android:textColorHint="@color/dark_grey"
+            android:textColor="?attr/textColor"
             android:hint="Nama Pasien"
             android:inputType="text" />
 
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/dark_grey"
+            android:textColor="?attr/textColor"
             android:hint="NIK Pasien"
             android:inputType="number" />
 
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/dark_grey"
+            android:textColor="?attr/textColor"
             android:hint="Jenis Kelamin"
             android:inputType="text" />
 
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/dark_grey"
+            android:textColor="?attr/textColor"
             android:hint="Nomor HP Pasien"
             android:inputType="number" />
 
@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/dark_grey"
+            android:textColor="?attr/textColor"
             android:hint="Email Pasien"
             android:inputType="textEmailAddress" />
 
@@ -77,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textColorHint="@color/dark_grey"
+            android:textColor="?attr/textColor"
             android:hint="Alamat Pasien"
             android:inputType="text" />
 

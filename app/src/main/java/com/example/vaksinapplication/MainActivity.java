@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                 mfirebaseAuth.signOut();
                                 Intent i = new Intent(MainActivity.this, LoginActivity.class);
                                 startActivity(i);
+                                finish();
                             }
                         })
                         .setNegativeButton("No",new DialogInterface.OnClickListener() {

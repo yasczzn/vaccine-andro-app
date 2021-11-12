@@ -10,12 +10,12 @@
     <application
         android:allowBackup="true"
         android:fontFamily="sans-serif-condensed-light"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/keluargasehat"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VaksinApplication">
-        <activity android:name=".ReadActivity"></activity>
+        <activity android:name=".ReadActivity"/>
         <activity android:name=".DetailActivity" />
         <activity android:name=".CreateActivity" />
         <activity
