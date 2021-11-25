@@ -2,10 +2,9 @@
 
 I made this project as a required task for college assignment. This project contains 
 android studio project for demonstrating authentication and CRUD user data on mobile 
-vaccine application. The application is connected to my Firebase 
-realtime database and i disabled to delete the data from remote platform.
+vaccine application. The application is connected to my Firebase realtime database. 
+There also light mode and dark mode options available in this app.
 
-This project may lack of many uses besides the CRUD function, reviews and suggestions 
-is much expected 🙏
+link to the prototype: https://xd.adobe.com/view/5f61444a-cc26-418d-8ad1-645054df35c8-0a32/
 
 - yasmin1812
