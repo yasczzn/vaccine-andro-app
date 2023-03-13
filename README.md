@@ -7,4 +7,4 @@ There also light mode and dark mode options available in this app.
 
 link to the prototype: https://xd.adobe.com/view/5f61444a-cc26-418d-8ad1-645054df35c8-0a32/
 
-- yasczzn
+- [yasczzn](https://github.com/yasczzn)
